@@ -1,0 +1,3 @@
+rfc:
+  n_estimators: 2000
+  criterion : entropy
