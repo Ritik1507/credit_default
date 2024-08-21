@@ -22,6 +22,8 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
+
+    
     
 @dataclass(frozen=True)
 class ModelTrainerConfig:
@@ -30,9 +32,10 @@ class ModelTrainerConfig:
     test_data_path: Path
     model_name: str
     n_estimators: int
-    criterion : str
-    target_column: str   
-
+    criterion: str
+    target_column: str      
+    
+    
 @dataclass(frozen=True)
 class ModelEvaluationConfig:
     root_dir: Path
@@ -41,4 +44,4 @@ class ModelEvaluationConfig:
     model_path: Path
     all_params: dict
     metric_file_name: Path
-    target_column: str
+    target_column: str    

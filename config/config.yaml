@@ -3,20 +3,20 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/Ritik1507/Data/raw/main/Credit_Card_Default_final.zip
-  local_data_file: artifacts/data_ingestion/Credit_Card_Default_final.zip
+  source_URL: https://github.com/Ritik1507/Data/raw/main/credit_card_final.zip
+  local_data_file: artifacts/data_ingestion/credit_card_final.zip
   unzip_dir: artifacts/data_ingestion
 
 
 data_validation:
   root_dir: artifacts/data_validation
-  unzip_data_dir: artifacts/data_ingestion/credit_Card_Default.csv
+  unzip_data_dir: artifacts/data_ingestion/credit_card_final.csv
   STATUS_FILE: artifacts/data_validation/status.txt
 
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/credit_Card_Default.csv
+  data_path: artifacts/data_ingestion/credit_Card_final.csv
 
 
 model_trainer:

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Web APP</title>
+    <link rel="stylesheet" href="../static/css/credit_default.css">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body>
+    <header>
+        <a ></a>
+      
+        <ul class="navbarr">
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+        <div class="mainn">
+          <a href="https://www.instagram.com/ritik__1507/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/ritikpadhi/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Ritik1507" class="GitHub"><i class="bi bi-github"></i></a>
+         
+          <div class="bi-list" id="menu-icon"></div>
+        </div>
+      </header>
+  
+  
+
+
+    
+
+
+      
+<div class="containers">
+    <div class="row header">
+      <h1>Credit Default Prediction &nbsp;</h1>
+      <h3>predicts if the Customer is going to Default on payments or Not </h3>
+    </div>
+    <div class="row body">
+      <form class="form-detail" action="/predict" method="post">
+        <ul>
+          
+          <!-- <li>
+            <p class="left">
+              <label for="first_name">First name</label>
+              <input type="text" name="first_name" placeholder="name" />
+            </p>
+            <p class="left rights">
+              <label for="last_name">Last name</label>
+              <input type="text" name="last_name" placeholder="last name" />      
+            </p>
+          </li> -->
+          <li>
+            <p>
+                <label for="PAY_1 "> First Repayment status :</label>
+                <input type="text" name="First Repayment status" id="First Repayment status" class="input-text" placeholder="First Repayment status" required>       
+            </p>
+          </li>
+          <li>
+            <p>
+                <label for="LIMIT_BAL"> Limit Balance :</label>
+                <input type="text" name="Limit Balance" id="Limit Balance" class="input-text" placeholder="Limit Balance" required> 
+            </p>
+          </li>
+          
+          <li>
+            <p>
+                <label for="BILL_AMT1"> First Bill Amount :</label>
+                <input type="text" name="First Bill Amount" id="First Bill Amount" class="input-text" placeholder="First Bill Amount" required>
+         </p>
+          </li>
+          <li>
+            <p>
+                <label for="PAY_AMT1"> First payment Amount:</label>
+                <input type="text" name="First payment Amount" id="First payment Amount" class="input-text" placeholder="First payment Amount" required>
+             </p>
+          </li>
+          <li>
+            <p>
+                <label for="PAY_AMT2"> Second payment Amount:</label>
+						<input type="text" name="Second payment Amount" id="Second payment Amount" class="input-text" placeholder="Second payment Amount" required>
+				  </p>
+          </li>
+          <li>
+            <p>
+                <label for="PAY_2"> Second Repayment status:</label>
+						<input type="text" name="Second Repayment status" id="Second Repayment status" class="input-text" placeholder="Second Repayment status" required>
+			 </p>
+          </li>
+          <li>
+            <p>
+                <label for="MARRIAGE"> Marriage status:</label>
+						<input type="text" name="Marriage status" id="Marriage status" class="input-text" placeholder="Marriage status" required>
+			</p>
+          </li>
+          <li>
+            <p>
+                <label for="SEX"> Gender :</label>
+						<input type="text" name="Gender" id="Gender" class="input-text" placeholder="Gender" required>
+			</p>
+          </li>
+          <li>
+            <p>
+                <label for="EDUCATION"> Highest Education:</label>
+						<input type="text" name="Highest Education" id="Highest Education" class="input-text" placeholder="Highest Education" required>
+					</p>
+          </li>
+         
+       <!--   <li>
+            <p>
+              <label for="email">email <span class="req">*</span></label>
+              <input type="email" name="email" placeholder="email@gmail.com" />
+            </p>
+          </li>    
+          <li>
+            <p>
+              <label for="Phone NO">Phone NO. <span class="req">*</span></label>
+              <input type="Phone NO" name="Phone NO" placeholder="  " />
+            </p>
+          </li>      
+          <li><div class="divider"></div></li>
+          <li>
+            <label for="comments">comments</label>
+            <textarea cols="46" rows="3" name="comments"></textarea>
+          </li>-->
+          
+          <li>
+          	<input type="submit" name="register" class="register" value="Predict">
+          </li>
+          
+        </ul>
+      </form>  
+    </div>
+  </div>
+
+
+
+
+
+    <script src="../static/js/credit_default.js"></script>
+</body>
+</html>
