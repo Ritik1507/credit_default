@@ -9,10 +9,10 @@ from credit_default.pipeline.stage_05_model_evaluation import ModelEvaluationTra
 
 STAGE_NAME = "Data Ingestion stage"
 try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+        logger.info(f">>>>>>  {STAGE_NAME} started <<<<<<")
         obj = DataIngestionTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        logger.info(f">>>>>>  {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e  
@@ -20,10 +20,10 @@ except Exception as e:
 
 STAGE_NAME =  "Data Validation Stage"
 try:
-  logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+  logger.info(f">>>>>>  {STAGE_NAME} started <<<<<<")
   obj = DataValidationTrainingPipeline()
   obj.main()
-  logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+  logger.info(f">>>>>>  {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e
@@ -31,10 +31,10 @@ except Exception as e:
 
 STAGE_NAME = "Data Transformation stage "
 try:
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   logger.info(f">>>>>>  {STAGE_NAME} started <<<<<<") 
    data_ingestion = DataTransformationTrainingPipeline()
    data_ingestion.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logger.info(f">>>>>> {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e
@@ -42,10 +42,10 @@ except Exception as e:
 
 STAGE_NAME = "Model Trainer stage"
 try:
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   logger.info(f">>>>>>  {STAGE_NAME} started <<<<<<") 
    data_ingestion = ModelTrainerTrainingPipeline()
    data_ingestion.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logger.info(f">>>>>>  {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e
@@ -53,10 +53,10 @@ except Exception as e:
 
 STAGE_NAME = "Model evaluation stage"
 try:
-   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   logger.info(f">>>>>> {STAGE_NAME} started <<<<<<") 
    data_ingestion = ModelEvaluationTrainingPipeline()
    data_ingestion.main()
-   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+   logger.info(f">>>>>>  {STAGE_NAME} completed <<<<<<\n\nx==========x")
 except Exception as e:
         logger.exception(e)
         raise e

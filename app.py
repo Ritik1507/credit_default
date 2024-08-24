@@ -22,12 +22,12 @@ def index():
     
     if request.method == 'POST':
         try:
-            PAY_1 = int(request.form['First Repayment status'])
+            PAY_1 = int(request.form['Repayment status in September'])
             LIMIT_BAL = int(request.form['Limit Balance'])
             BILL_AMT1 = int(request.form['First Bill Amount'])
-            PAY_AMT1 = int(request.form['First payment Amount'])
-            PAY_AMT2 = int(request.form['Second payment Amount'])
-            PAY_2 = int(request.form['Second Repayment status'])
+            PAY_AMT1 = int(request.form['Payment Amount In September'])
+            PAY_AMT2 = int(request.form['Payment Amount In August'])
+            PAY_2 = int(request.form['Repayment status in August'])
             MARRIAGE = int(request.form['Marriage status'])
             SEX = int(request.form['Gender'])
             EDUCATION = int(request.form['Highest Education'])
